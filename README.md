@@ -23,24 +23,24 @@ Data collection
 Data Pre-process.
 Training of Model. 5. Real-time prediction test.
 
-###Introduction of Facenet and implementation base: 
-Well, implementation of FaceNet is published in Arxiv (FaceNet: A Unified Embedding for Face Recognition and Clustering). It contains the idea of two paper named as ìA Discriminative Feature Learning Approach for Deep Face Recognitionî and ìDeep Face Recognitionî.
+##Introduction of Facenet and implementation base: 
+Well, implementation of FaceNet is published in Arxiv (FaceNet: A Unified Embedding for Face Recognition and Clustering). It contains the idea of two paper named as ‚ÄúA Discriminative Feature Learning Approach for Deep Face Recognition‚Äù and ‚ÄúDeep Face Recognition‚Äù.
 
-###Data collection and pre-processing: 
+##Data collection and pre-processing: 
 In this part, we will prepare our code and data. We will start code from basic step i.e collection and arrangement of data in a proper format. For preparing online data, download the image from google. If you have your own image data-set of one or more person then arrange all images in the format as shown in below image.
 
 After downloading the image from google image arrange all file and folder in the same directory structure.
 
-###Data Pre-processing: 
-Now for preprocessing all the image data-set, you have to run the file named as ìpreprocess.pyî as python file. This file will crop the face of each face and label each face image with the folder name. And generate a text file ìbounding_boxes_433.txtî where you see labeling of data.
+##Data Pre-processing: 
+Now for preprocessing all the image data-set, you have to run the file named as ‚Äúpreprocess.py‚Äù as python file. This file will crop the face of each face and label each face image with the folder name. And generate a text file ‚Äúbounding_boxes_433.txt‚Äù where you see labeling of data.
 
 This type of labeling can be accomplished with image labeling data. All the work will be done by the program automatically you only have to run this file. Python initializer.py
 
-###Training of Model:
- After preprocessing of data we have to train model with a predefined model. Put pb file inside the folder named as ìmodelî. And now run the training file ìtrain_main.pyî as python command. It will train model and also pkl file will be saved inside directory ìClassî. Python classifier_train.py
+##Training of Model:
+ After preprocessing of data we have to train model with a predefined model. Put pb file inside the folder named as ‚Äúmodel‚Äù. And now run the training file ‚Äútrain_main.py‚Äù as python command. It will train model and also pkl file will be saved inside directory ‚ÄúClass‚Äù. Python classifier_train.py
 
-###Testing Real-time Prediction:
-Finally, this stage is active and you can test it with your own image or video data. For both types of code test, I have provided the code separately on Github. For image test run file ìidentify_face_image.pyî in this file and change your own image at variable ìimg_pathî at line number 15 and run the code. ex. img_path=ítest_img/abc.jpgí.
+##Testing Real-time Prediction:
+Finally, this stage is active and you can test it with your own image or video data. For both types of code test, I have provided the code separately on Github. For image test run file ‚Äúidentify_face_image.py‚Äù in this file and change your own image at variable ‚Äúimg_path‚Äù at line number 15 and run the code. ex. img_path=‚Äôtest_img/abc.jpg‚Äô.
 
 ##Applications of Real-time Face Recognition using FaceNet :
 
